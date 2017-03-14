@@ -2,23 +2,6 @@
 
 *Made by: Fredrik Håkansson (freha309) and Alexander Ulander (aleul850)*
 
-## Docker commands:
-
-#### GO Server
-docker build -t heekzz/tdde06_go . (in mappen med Dockerfile för go app)
-
-docker run  --name go_server --link pg_server:db -it --rm -d heekzz/tdde06_go
-
-#### Database:
-docker build -t heekzz/tdde06_postgres .
-
-docker run --name pg_server --rm -d heekzz/tdde06_postgres
-
-#### NGINX:
-docker build -t heekzz/tdde06_nginx .
-
-docker run --name nginx_server --rm --link go_server:app -d  -p 80:80 heekzz/tdde06_nginx
-
 
 ## How-To:
 ### Introduction
