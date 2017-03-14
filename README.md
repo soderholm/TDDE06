@@ -94,4 +94,4 @@ This is just a test of things...
 *TODO: Add jenkins tutorial*
 
 ### Step 5: Add webhooks from GitHub
-Now you want to set up the trigger of your CI, to be when you push changes to your GitHub project. To set this up, go to your desired GitHub repository's settings. Now choose "Integrations & services", press "Add service", search for "jenkins github" and select the only search result that pops up. Now add the Jenkins hook url, which will be the url for where your jenkins master is located (along with an optional port number, e.g. myserver.com:8080) and finally add the service.
+Now you want to set up the trigger of your CI, to be when you push changes to your GitHub project. To set this up, go to your desired GitHub repository's settings. Now choose "Integrations & services", press "Add service", search for "jenkins github" and select the only search result that pops up. Now add the Jenkins hook url, which will be the url for where your jenkins master is located along with an optional port number and github-webhook path (e.g. http://myserver.se:8080/github-webhook/), and finally add the service.
