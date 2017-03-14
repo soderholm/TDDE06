@@ -69,7 +69,7 @@ we will pull the image for the postgres database. And then repeat the same with 
 
 We now have our Docker images configurated and ready to run.
 
-### Step 3: Run Docker containers
+### Step 3: Running Docker containers
 
 We can now run the Docker images we just pulled in a container. We need to run the three images in the order 
 ```javascript
@@ -94,6 +94,8 @@ Short explanation of the flags we used:
 - **--link:** creates a link between the two containers. --link pg_server:db enables us to use the address and port of the postgres container as environment variables in the Go container.
 
 Now you should be able to connect to the server on `localhost:80` on the machine running the Docker containers. We will use the machine provided for the course further in the instructions when we start to interact with Jenkins.
+
+This is just a test of things...
 
 ### Step 4: Configure Jenkins
 *TODO: Add jenkins tutorial*
