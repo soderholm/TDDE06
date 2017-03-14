@@ -2,7 +2,16 @@
 
 *Made by: Fredrik Håkansson (freha309) and Alexander Ulander (aleul850)*
 
-Test
+## Scenario:
+Imagine that you have a large scale software project with multiple developers where when everytime you make changes, you have to manually go through the whole tedious cycle of e.g.:
+1. uploading the new code to github
+2. getting the new code to your server 
+3. testing it with the new code 
+4. updating the server with the new code if the tests are successfull
+5. restarting the servers
+6. notifying the other developers about the changes 
+
+Now imagine that instead of doing all of these steps after every push, you have a system that triggers on your push and performs all of your desired code integration steps automatically. Well, now you can. Introducing continous integration (CI) - with Docker and Jenkins.
 
 ## How-To:
 ### Introduction
@@ -85,4 +94,4 @@ This is just a test of things...
 *TODO: Add jenkins tutorial*
 
 ### Step 5: Add webhooks from GitHub
-*TODO: Add GitHub tutorial*
+Now you want to set up the trigger of your CI, to be when you push changes to your GitHub project. To set this up, go to your desired GitHub repository's settings. Now choose "Integrations & services", press "Add service", search for "jenkins github" and select the only search result that pops up. Now add the Jenkins hook url, which will be the url for where your jenkins master is located (along with an optional port number, e.g. myserver.com:8080) and finally add the service.
